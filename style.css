@@ -256,12 +256,21 @@ button:hover {
     background-color: #f4f4f4;
   }
 
+  .menu-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .loginBox { order: 1; }
+  .announcement { order: 2;}
+  .menuBox { order: 3; }
+
   #logo {
     content: url("./image/logo_m.jpeg");
     position: static;
     display: block;
     margin: 30px auto 20px auto;
-    width: 90%;
+    width: 92%;
   }
 
   hr {
