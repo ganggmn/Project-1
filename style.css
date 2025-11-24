@@ -339,7 +339,7 @@ button:hover {
     margin: 8px 0 12px 0;
   }
   .portal-area a img {
-    width: 60%;
+    width: 80%;
     display: block;
     margin: 0 auto 12px auto;   /* 박스의 가로 가운데 정렬 */
 }
