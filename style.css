@@ -276,7 +276,7 @@ button:hover {
   hr {
     position: static;
     width: 90%;
-    margin: 0 auto 25px auto;
+    margin: 0 auto 10px auto;
     transform: none;
   }
 
@@ -292,15 +292,15 @@ button:hover {
  
 
   .loginBox {
-    padding: 10px 10px;
+    padding: 25px 20px;
   }
 
   .menuBox {
-    padding: 100px;
+    padding: 20px;
   }
 
   .announcement {
-    padding: 10px 10px;
+    padding: 15px 20px;
   }
 
   /* input / button 가로로 좁아지는 문제 방지 */
