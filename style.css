@@ -269,8 +269,8 @@ button:hover {
     content: url("./image/logo_m.jpeg");
     position: static;
     display: block;
-    margin: 30px auto 20px auto;
-    width: 92%;
+    margin: 10px auto 10px auto;
+    width: 95%;
   }
 
   hr {
