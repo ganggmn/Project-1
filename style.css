@@ -239,3 +239,12 @@ button:hover {
   top: 20px;
   right: 20px;
 }
+
+.portal-area {
+  position: absolute;
+  top: 25px;
+  left: 180px;
+}
+.portal-area a img{
+  width: 85%;
+}
