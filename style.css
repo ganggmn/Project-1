@@ -342,7 +342,8 @@ button:hover {
     position: relative !important;
     text-align: right;
     top: -54px;
-    left: 44px;
+    left: 32px;
+    margin-bottom: -20px;
   }
 
   .portal-area img {
