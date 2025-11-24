@@ -248,3 +248,69 @@ button:hover {
 .portal-area a img{
   width: 85%;
 }
+
+
+@media screen and (max-width: 768px) {
+  body {
+    background-image: none;   /* 배경 삭제 — e캠퍼스 방식 */
+    background-color: #f4f4f4;
+  }
+
+  #logo {
+    position: static;
+    display: block;
+    margin: 30px auto 20px auto;
+    width: 35%;
+  }
+
+  hr {
+    position: static;
+    width: 90%;
+    margin: 0 auto 25px auto;
+    transform: none;
+  }
+
+  /* 모든 박스 → 세로 스택 */
+  .loginBox,
+  .menuBox,
+  .announcement {
+    position: static;
+    width: 90%;
+    margin: 15px auto;
+    height: auto;
+  }
+
+  .loginBox {
+    padding: 25px 20px;
+  }
+
+  .menuBox {
+    padding: 20px;
+  }
+
+  .announcement {
+    padding: 15px 20px;
+  }
+
+  /* input / button 가로로 좁아지는 문제 방지 */
+  input,
+  button {
+    width: 100%;
+  }
+
+  .button-area button {
+    height: 50px;
+  }
+
+  /* 아이디찾기 / 회원가입 링크 위치도 선형 정렬 */
+  .search-area,
+  .register-area {
+    position: static;
+    display: inline-block;
+    margin: 10px 5px 0 5px;
+  }
+
+  .form-area {
+    flex-direction: column; /* 아이디/비번/버튼 세로 정렬 */
+  }
+}
