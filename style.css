@@ -270,13 +270,13 @@ button:hover {
     position: static;
     display: block;
     margin: 10px auto 10px auto;
-    width: 95%;
+    width: 100% auto;
   }
 
   hr {
     position: static;
     width: 90%;
-    margin: 0 auto 10px auto;
+    margin: 0 auto 0px auto;
     transform: none;
   }
 
