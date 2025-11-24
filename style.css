@@ -339,14 +339,14 @@ button:hover {
     margin: 8px 0 12px 0;
   }
     .portal-area {
-    position: static !important;
+    position: relative !important;
     text-align: right;
     margin-bottom: 2px;
-
+    top: -40px;
   }
 
   .portal-area img {
     width: 40% !important;
-    top: -40px;
+
   }
 }
