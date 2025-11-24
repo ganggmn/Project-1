@@ -338,10 +338,13 @@ button:hover {
     width: 100% !important;
     margin: 8px 0 12px 0;
   }
-  .portal-area a img {
-    padding-left: 4px;
-    width: 85%;
-    display: block;
-    margin: 0 auto 12px auto;   /* 박스의 가로 가운데 정렬 */
-}
+    .portal-area {
+    position: static !important;
+    text-align: right;
+    margin-bottom: 15px;
+  }
+
+  .portal-area img {
+    width: 60% !important;
+  }
 }
