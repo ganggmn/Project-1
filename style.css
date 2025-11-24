@@ -261,7 +261,7 @@ button:hover {
     position: static;
     display: block;
     margin: 30px auto 20px auto;
-    width: auto;
+    width: 90%;
   }
 
   hr {
@@ -273,13 +273,14 @@ button:hover {
 
   /* 모든 박스 → 세로 스택 */
   .loginBox,
-  .menuBox,
-  .announcement {
+  .announcement,
+  .menuBox {
     position: static;
     width: 90%;
     margin: 15px auto;
     height: auto;
   }
+ 
 
   .loginBox {
     padding: 25px 20px;
