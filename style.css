@@ -257,11 +257,11 @@ button:hover {
   }
 
   #logo {
-    background-image: url("./image/logo_m.jpeg") !important;
+    content: url("./image/logo_m.jpeg");
     position: static;
     display: block;
     margin: 30px auto 20px auto;
-    width: 25%;
+    width: auto;
   }
 
   hr {
