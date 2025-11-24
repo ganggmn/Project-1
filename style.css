@@ -313,4 +313,29 @@ button:hover {
   .form-area {
     flex-direction: column; /* 아이디/비번/버튼 세로 정렬 */
   }
+  .button-area button {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  /* 아이디/비번찾기 / 회원가입 좌우 분리 */
+  .search-register-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  .search-area,
+  .register-area {
+    position: static !important;
+    margin: 0 !important;
+  }
+
+  /* 공지사항 hr 삐져나오는 문제 해결 */
+  .announcement hr {
+    position: static !important;
+    width: 100% !important;
+    margin: 8px 0 12px 0;
+  }
 }
