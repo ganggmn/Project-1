@@ -257,6 +257,7 @@ button:hover {
   }
 
   #logo {
+    background-image: url("./image/logo_m.jpeg") !important;
     position: static;
     display: block;
     margin: 30px auto 20px auto;
