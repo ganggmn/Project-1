@@ -36,7 +36,7 @@
 
                     <div class="search-register-wrap">
                         <div class="search-area">
-                            <a href="./find_users/index.html" class="search">학번/비밀번호 찾기</a>
+                            <a href="./find_users/index.html" onclick="openRegister(event)" class="search">학번/비밀번호 찾기</a>
                         </div>
                         <div class="register-area">
                             <a href="./register/index.html" onclick="openRegister(event)" class="register">회원가입</a>
@@ -85,7 +85,7 @@
         window.open(
             "/register/index.html",   // 회원가입 페이지 경로
             "signupPopup",            // 팝업 이름(중복 방지)
-            "width=500,height=900,top=120,left=420,resizable=no,scrollbars=no"
+            "width=500,height=800,top=120,left=420,resizable=no,scrollbars=no"
         );
     }
 </script>
