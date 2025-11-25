@@ -174,7 +174,7 @@ body {
 }
 
 .verify-area .verify-code {
-    flex: 2;
+    flex: 3;
 }
 
 .verify-area .verify-btn {
@@ -190,7 +190,18 @@ body {
     font-weight: 600;
     cursor: pointer;
 }
-
+.timer-wrapper {
+    display: flex;
+}
+.timer {
+    position: absolute;
+    margin-top: 14px;
+    margin-left: 130px;
+    color: rgba(209, 0, 0, 0.6);
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.05);
+ 
+    
+}
 /* 처음에는 숨김 */
 .hidden {
     display: none;
