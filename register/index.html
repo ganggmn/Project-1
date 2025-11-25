@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+</head>
+<body>
+    
+    <div class = "container">
+        <div class="login-area">
+            <input type="text" class="student-id" placeholder="학번">
+            <input type="password" class="password" placeholder="비밀번호">
+            <input type="password"  class="password-check" placeholder="비밀번호 재확인">
+        </div>
+
+        <div class="user-area">
+            <input type="text" class="username" placeholder="이름">
+            <input type="text" class="bitrh" placeholder="생년월일 6자리">
+            <div class="phone-area">
+                <input type="text" class="phone" placeholder="전화번호">
+                <select name="mobile carrier" size="1">
+                    <option>LG U+</option> <option>SKT</option>
+                    <option>KT</option> <option>LG U+ 알뜰폰</option> 
+                    <option>SKT 알뜰폰</option> <option>KT 알뜰폰</option>
+                </select>
+                <button class="request">인증요청</button>            
+            </div>
+
+
+            <div class="radio-area">
+                <label><input type="radio" name="sex" value="male"/>남성</label>
+                <label><input type="radio" name="sex" value="female"/>여성</label>
+            </div>
+            <div class="nationality-area">
+                <input type="radio" name = "nationality" value="domestic"/>내국인
+                <input type="radio" name = "nationality" value="foriegn"/>외국인
+            </div>
+        </div>
+
+    
+    </div>
+</body>
+</html>

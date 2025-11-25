@@ -1,0 +1,117 @@
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  background-image: url("./image/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 100vh;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 회원가입 전체 박스 */
+.container {
+    background: rgba(0, 55, 153, 0.7);
+    width: 420px;
+    padding: 30px 28px;
+    border-radius: 16px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.3);
+    backdrop-filter: blur(4px);
+}
+
+/* 입력창 공통 */
+.container input,
+.container select {
+    width: 100%;
+    padding: 12px 10px;
+    border-radius: 10px;
+    border: 2px solid #dcdcdc;
+    font-size: 14px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    transition: all 0.2s;
+}
+
+.container input:focus,
+.container select:focus {
+    border-color: #003799;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 55, 153, 0.3);
+}
+
+/* 인증요청 버튼 */
+.request {
+    background-color: #003a9f;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.2s;
+    width: 100%;
+}
+
+.request:hover {
+    background-color: #002b78;
+}
+
+/* 전화번호 + 통신사 + 인증요청 정렬 */
+.phone-area {
+    display: flex;
+    gap: 8px;
+}
+
+.phone-area input {
+    flex: 1;
+}
+
+.phone-area select {
+    width: 110px;
+}
+
+/* 라디오 버튼 영역 */
+.radio-area,
+.nationality-area {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.radio-area label,
+.nationality-area label {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* 브레이크포인트 — 모바일 */
+@media screen and (max-width: 480px) {
+
+    body {
+        background-image: none;
+        background-color: #f4f4f4;
+        align-items: flex-start;
+        padding-top: 40px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 25px;
+        background: rgba(0,55,153,0.85);
+    }
+
+    .phone-area {
+        flex-direction: column;
+    }
+
+    .phone-area select,
+    .request {
+        width: 100%;
+    }
+}
