@@ -1,0 +1,141 @@
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 30px;
+}
+
+.finderInfo-container {
+    width: 500px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.12);
+    padding: 30px 30px 40px 30px;
+    box-sizing: border-box;
+}
+
+/* 제목 */
+.finderInfo-container {
+    font-size: 26px;
+    color: #003a9f;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* 섹션 */
+.section {
+    margin-bottom: 35px;
+}
+
+.section-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: #003a9f;
+    margin-bottom: 8px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: #e1e4eb;
+    margin-top: 6px;
+}
+
+/* input 공통 */
+input, select {
+    width: 100%;
+    padding: 12px 12px;
+    border: 1.6px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 14px;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #003a9f;
+    box-shadow: 0 0 6px rgba(0, 55, 153, 0.2);
+}
+
+/* 전화번호 묶음 */
+.phone-group {
+    display: flex;
+    gap: 8px;
+}
+
+.phone-group input {
+    flex: 1;
+}
+
+.phone-group select {
+    width: 110px;
+}
+
+.request-btn {
+    background: #003a9f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0 16px;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+
+    height: 44px;
+}
+
+.request-btn:hover {
+    background: #002b78;
+}
+
+
+/* 가입 버튼 */
+.submit-btn {
+    width: 100%;
+    padding: 14px 0;
+    background: #003a9f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background: #002b78;
+}
+
+.option-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+
+
+/* 모바일 반응형 */
+@media screen and (max-width: 480px) {
+    .register-container {
+        width: 92%;
+        padding: 25px;
+    }
+
+    .phone-group {
+        flex-direction: column;
+    }
+
+    .phone-group select,
+    .request-btn {
+        width: 100%;
+    }
+}

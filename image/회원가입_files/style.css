@@ -11,15 +11,12 @@ body {
 
 /* 회원가입 전체 박스 */
 .container {
-    display: flex;
     width: 400px;
     background: #ffffff;
     border-radius: 14px;
     box-shadow: 0 0 20px rgba(0,0,0,0.12);
-    padding: 28px 30px 30px 30px;
+    padding: 28px 30px 35px 30px;
     box-sizing: border-box;
-
-    flex-direction: column;
 }
 
 /* 입력 박스 공통 */
@@ -47,7 +44,7 @@ body {
     font-size: 26px;
     color: #003a9f;
     margin-top: 0;
-    margin-bottom: 14px;
+    margin-bottom: 25px;
     font-weight: 600;
     text-align: center;
 }
@@ -117,20 +114,15 @@ body {
 .phone-wrapper input {
     flex: 1;
 }
-.phone-area .carrier,
-.phone-area .request {
-    height: 45px;  /* 입력칸과 동일한 높이로 맞추기 */
-    box-sizing: border-box; 
-}
 
 .verify-wrapper {
     display: flex;
     align-items: center;
-    gap: 0px;
+    gap: 6px;
 }
 .phone-area .carrier {
     flex: 1.1;
-    margin-right: 20px;
+    margin-right: 14px;
 }
 
 .phone-area .request {
@@ -144,7 +136,7 @@ body {
     font-size: 14px;
     cursor: pointer;
     transition: 0.2s;
-    transform: translateY(-15%);
+
 
 }
 
@@ -172,10 +164,6 @@ body {
     font-weight: 600;
     font-size: 14px;
     cursor: pointer;
-
-    height: 45px;
-
-
 }
 
 
@@ -187,8 +175,7 @@ body {
 
 /* ------ 회원가입 버튼 ------ */
 .submit-btn {
-
-    width: 340px;
+    width: 400px;
     padding: 14px 0;
     background: #003a9f;
     color: white;
@@ -197,9 +184,10 @@ body {
     font-size: 17px;
     font-weight: 600;
     cursor: pointer;
+    margin-top: 20px;
     display: block;
-
-    margin-top: auto;
+    position: absolute;
+    top: 70%;
 }
 
 .submit-btn:hover {
