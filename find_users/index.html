@@ -2,41 +2,68 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>학번/비밀번호 찾기</title>
+    <title>회원번호 찾기</title>
+    
 </head>
 <body>
-    <div class="findInfo-container">
+    <div class="container">
 
-        <h1 class="findInfo-title">SMU</h1>
+        <h1 class="findInfo">회원 정보 찾기</h1>
 
-        <div class="section">
-            <h2 class="section-title">학번 찾기</h2>
+        <!-- 유저 정보 영역 -->
+        <div class="user-area">
+            <h2 class="section-title">회원 정보</h2>
 
-            <input type="text" placeholder="이름">
-            <input type="text" placeholder="생년월일 6자리">
-            <input type="text" placeholder="">
+            <input type="text" class="username" placeholder="이름">
 
-            <div class="phone-group">
-                <input type="text" placeholder="전화번호">
-                <select>
-                    <option>SKT</option>
-                    <option>KT</option>
-                    <option>LG U+</option>
-                    <option>SKT 알뜰폰</option>
-                    <option>KT 알뜰폰</option>
-                    <option>LG U+ 알뜰폰</option>
-                </select>
-                <button class="request-btn">인증요청</button>
+            <div class="birth-area">
+                <input type="text" class="birth" placeholder="생년월일 (6자리)">
+                <span class="dash">-</span>
+                <input type="text" class="birth-first" maxlength="1">
+                <span class="circle">●●●●●●</span>
             </div>
 
-            
+            <div class="phone-area">
+                <div class="phone-wrapper">
+                    <input type="text" class="phone" maxlength="3" placeholder="010">
+                    <span class="dash">-</span>
+                    <input type="text" class="phone" maxlength="4" placeholder="0000">
+                    <span class="dash">-</span>
+                    <input type="text" class="phone" maxlength="4" placeholder="0000">
+                </div>
+
+
+                <div class="carrier-wrapper">
+                    <select class="carrier" size = 1>
+                        <option>LG U+</option> <option>SKT</option>
+                        <option>KT</option> <option>LG U+ 알뜰폰</option> 
+                        <option>SKT 알뜰폰</option> <option>KT 알뜰폰</option>
+                    </select>
+
+                    <button class="request" id="requestBtn">인증요청</button>
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="verify-area hidden">
+                <input type="text" class="verify-code" placeholder="인증번호 입력">
+                <button class="verify-btn">확인</button>
+            </div>
 
         </div>
 
-        <button class="submit-btn">학번 찾기</button>
+        <button class="submit-btn">회원 정보 찾기</button>
+
+
 
     </div>
+
+    <script src="./register.js"></script>
 </body>
 </html>
