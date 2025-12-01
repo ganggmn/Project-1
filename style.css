@@ -326,10 +326,12 @@ h2 {
     width: 80%;
     position: static;
     transform: none;
-    margin-bottom: 1rem;
+    margin: 0;
   }
 
   .right-wrapper {
+    display: flex;
+    flex-direction: column;
     width: 92%;
     min-width: 0;
   }
@@ -343,6 +345,7 @@ h2 {
   .form-area {
     flex-direction: column;
   }
+
 
   .button-area button {
     width: 100%;
