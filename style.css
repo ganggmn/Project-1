@@ -118,7 +118,7 @@ button:hover {
 
   gap: 1rem;
   width: 31%;
-  height: 100%;
+  height: auto;
 
 }
 
@@ -131,6 +131,7 @@ button:hover {
   
   gap: 1rem;
   width: 100%;
+  height: auto;
 }
 
 
@@ -149,6 +150,7 @@ button:hover {
   gap: 0.5rem;
 
   flex: 2;
+  height: auto;
 }
 
 h2 {
@@ -235,6 +237,7 @@ h2 {
   flex-direction: column;
   gap: 0.2rem;
   flex: 0.7;
+  height: auto;
 }
 
 .menuBox a {
@@ -263,6 +266,7 @@ h2 {
 
   display: flex;
   flex-direction: column;
+  height: auto;
 }
 .announcement-header {
   display: flex;
