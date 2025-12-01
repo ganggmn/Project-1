@@ -323,7 +323,7 @@ h2 {
 
   #logo {
     content: url("./image/logo_m.jpeg");
-    width: 80%;
+    width: 100%;
     position: static;
     transform: none;
     margin: 0;
@@ -334,7 +334,7 @@ h2 {
   .right-row-wrapper {
     display: flex;
     flex-direction: column;
-    width: 92%;
+    width: 100%;
     min-width: 0;
   }
 
@@ -342,6 +342,7 @@ h2 {
   .menuBox,
   .announcement {
     width: 100%;
+    margin: 0;
   }
   .loginBox {
     order: 1;
