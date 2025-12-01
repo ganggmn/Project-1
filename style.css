@@ -1,4 +1,26 @@
+/* =========================================
+   기본 설정 (전체 rem, 반응형 유지)
+========================================= */
+:root {
+  font-size: 16px; /* rem 기준 */
+}
+.container {
+  width: 100%;
+  max-width: 1650px;
 
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+}
+.right-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  width: 100%;
+
+}
 body {
   font-family: "Noto Sans KR", sans-serif;
   background-image: url("./image/background.jpg");
@@ -6,129 +28,186 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 
-  height: 100vh;
   margin: 0;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
 }
 
-hr {
-  position: absolute;
-  top: 18%;        /* 로고 아래 위치 — 원하는 값으로 조절 가능 */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;      /* 줄 길이 */
-  height: 1.5px;
-  background-color: #dcdcdc;
-  border: none;
-  opacity: 0.6;
+/* =========================================
+   로고
+========================================= */
+
+.logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto;
+
+}
+#logo {
+  width: 160px;
+  padding: 10% 0 2%;
+}
+
+.logo-wrapper a {
+  display: inline-block;
+  width: fit-content;
 }
 
 
-h2 {
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 30px;
-  margin-top: 0px;
-  margin-bottom: 20px;
-  font-weight: 200;
-  
+.logo-line {
+    width: 100%;
+    height: 1.5px;
+    border: none;
+    margin: 1% 0;
+    background-color: #dcdcdc;
+  opacity: 0.65;
 }
 
-label {
-  font-size: 15px;
-  color: #444;
-  display: block;
-  text-align: left;
-  margin-bottom: 5px;
-}
-
+/* =========================================
+   공통 요소
+========================================= */
 input {
   width: 100%;
-  padding: 12px 10px;
-  border-radius: 8px;
-  border: 2px solid #dcdcdc;
-  margin-bottom: 10px;
-  font-size: 14px;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 0.125rem solid #dcdcdc;
+
+  font-size: 0.875rem; /* 14px */
+  margin-bottom: 0.625rem; /* 10px */
+
+  transition: 0.2s ease;
   box-sizing: border-box;
-  transition: all 0.2s;
 }
 
 input:focus {
   border-color: #003799;
   outline: none;
-  box-shadow: 0 0 5px rgba(0, 55, 153, 0.3);
+  box-shadow: 0 0 0.3125rem rgba(0, 55, 153, 0.3);
 }
 
 button {
   width: 100%;
-  padding: 12px;
+  padding: 0.75rem;
   background-color: #003a9f;
   color: white;
   border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
+  border-radius: 0.5rem;
+
+  font-size: 1rem;
   font-weight: 600;
-  transition: 0.2s;
+  cursor: pointer;
+  transition: 0.2s ease;
 }
 
 button:hover {
   background-color: #002b7a;
 }
-.loginBox {
-  position: absolute;
-  top: 21%;
-  right: 1%;
-  background: rgba(0, 55, 153, 0.7);
-  width: 300px;
-  height: 170px;
-  padding: 20px 20px;
-  border-radius: 14px;
-  box-shadow: 0 4px 25px rgba(0,0,0,0.3);
-  backdrop-filter: blur(4px);
-  
+
+/* =========================================
+   배치: 오른쪽 큰 열 (로그인/공지)
+========================================= */
+.right-column-wrapper {
+  display: flex;
+  flex-direction: column;
+ 
+
+  gap: 1rem;
+  width: 31%;
+  height: 100%;
+
 }
+
+/* =========================================
+   배치: 오른쪽 큰 행 (로그인/메뉴)
+========================================= */
+.right-row-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* =========================================
+   로그인 박스
+========================================= */
+.loginBox {
+  background: rgba(0, 55, 153, 0.7);
+  padding: 1.5rem 1.2rem 0.7rem 1.2rem;
+  border-radius: 0.875rem;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.3);
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  flex: 1;
+}
+
+h2 {
+  color: rgba(255,255,255,0.8);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.35);
+
+  font-size: 2.2rem;
+  font-weight: 300;
+
+  margin: 0;
+  margin-bottom: 0rem;
+
+}
+
+/* layout */
 .form-area {
+  display: flex;
+  gap: 0.5rem;
+
+  flex-direction: column;
+}
+
+.login-header {
     display: flex;
     justify-content: space-between;
-    align-items: stretch; 
-    gap: 8px;
+    align-items: center;
+
+    margin-bottom: 2%;
 }
 
-.input-area input {
-    flex: 1;
-    height: 50px;
+.login-area {
+    display: flex;
 }
 .input-area {
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-    flex-grow: 1;
-}
+  flex: 3;
+  display: flex;
+  flex-direction: column;
 
+  padding-right: 2%;
+}
 .button-area {
-    display: flex;
+    flex: 1.2;
+
     align-items: stretch;
 }
 
 .button-area button {
-    height: 92%;   
-    padding: 0 20px;
-    width: auto;
-}
-
-#logo {
-  width: 10%;
-  position: absolute;
-  top: 2%;
-  right: 46%;
+  height: 92.5%;
+  width: 100%;
 
 }
 
-.search-area {
-  position: absolute;
-  bottom: 10px;
-  left: 24px;
-  font-size: 12px;
+.search-register-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.82rem;
 }
 
 .search,
@@ -137,233 +216,133 @@ button:hover {
 .search:active{
   color: #dcdcdc
 }
-
-.register-area {
-  position: absolute;
-  font-size: 12px;
-  bottom: 10px;
-  right: 24px;
-  
-}
 .register,
 .register:visited,
 .register:hover,
 .register:active{
   color: #dcdcdc
 }
-
+/* =========================================
+   메뉴 박스
+========================================= */
 .menuBox {
-  display: flex;
-  position: absolute;
+  padding: 1.2rem;
+  padding-bottom: 0;
   background-color: rgba(0, 55, 153, 0.8);
-  flex-direction: column;
-
-  width: 100px;
-  height: 170px;
-  padding: 20px 20px;
-  border-radius: 14px;
-  box-shadow: 0 4px 25px rgba(0,0,0,0.3);
+  border-radius: 0.875rem;
   backdrop-filter: blur(4px);
+  box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.3);
 
-  top: 21%;
-  right: 22%;
-
-}
-.menuBox a {
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-  font-size: 14px;
-  text-decoration: none;
-  margin-bottom: 14px;
-}
-
-.menuBox a,
-.menuBox a:visited,
-.menuBox a:active{
-  color: #dcdcdc;
-
-}
-.menuBox a:hover {
-  color: #dcdcdc;
-  text-decoration: underline;
-}
-
-.announcement {
   display: flex;
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.8);
   flex-direction: column;
-
-  width: 460px;
-  height: 170px;
-  padding: 8px 20px;
-  border-radius: 14px;
-  box-shadow: 0 4px 25px rgba(0,0,0,0.3);
-  backdrop-filter: blur(4px);
-
-  top: 45%;
-  right: 1%;
-
+  gap: 0.2rem;
+  flex: 0.3;
 }
-.announcement p {
-  font-weight: 600;
-}
-.announcement li{
-  text-shadow: 0 0 0.8px rgba(0,0,0,0.1);
-  margin-bottom: 10px;
-  color: #666666;
-  font-size: 14px;
-  line-height: 1.2;
-}
-.announcement li a,
-.announcement li a:visited,
-.announcement li a:active{
-  color: #666666;
+
+.menuBox a {
+  color: #dcdcdc;
+  font-size: 0.825rem; /* 14px */
   text-decoration: none;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+  flex: 1;
 }
-.announcement li:hover {
-  color: #666666;
+
+.menuBox a:hover {
   text-decoration: underline;
 }
+
+/* =========================================
+   공지사항 박스
+========================================= */
+.announcement {
+  flex: 1;
+  padding: 0rem 1.4rem;
+  background: rgba(255,255,255,0.8);
+
+  border-radius: 0.875rem;
+  box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.3);
+  backdrop-filter: blur(4px);
+
+  display: flex;
+  flex-direction: column;
+}
+.announcement-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+
+}
+
 
 .announcement hr {
-  position: absolute;
-  top: 48px;
-  width: 90%;
+  width: 100%;
+  border: none;
+  height: 1px;
+  background-color: rgba(0,0,0,0.1);
+  margin: 0;
+}
+
+.announcement li {
+  margin-bottom: 0.7rem;
+
+  color: #555;
+  font-size: 0.875rem;
+  text-shadow: 0 0 1px rgba(0,0,0,0.1);
+
+}
+
+
+.announcement a,
+.announcement a:visited {
+  color: #555;
+  text-decoration: none;
+}
+.announcement a:hover:not(.announcement_plus) {
+
+  text-decoration: underline;
 }
 
 .announcement_plus,
-.announcement_plus:hover,
-.announcement_plus:visited,
-.announcement_plus:active{
-  color: #666666;
+.announcement_plus:hover {
   text-decoration: none;
-  font-size: 24px;
-  font-weight: 600;
-  
-  position: absolute;
-  top: 20px;
-  right: 20px;
 }
 
-.portal-area {
-  position: absolute;
-  top: 25px;
-  left: 180px;
-}
-.portal-area a img{
-  width: 85%;
-}
-
-
+/* =========================================
+   모바일 버전
+========================================= */
 @media screen and (max-width: 768px) {
   body {
-    background-image: none;   /* 배경 삭제 — e캠퍼스 방식 */
+    justify-content: center;
+    background-image: none;
     background-color: #f4f4f4;
   }
 
-  .menu-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .loginBox { order: 1; }
-  .announcement { order: 2;}
-  .menuBox { order: 3; }
-
   #logo {
     content: url("./image/logo_m.jpeg");
+    width: 80%;
     position: static;
-    display: block;
-    margin: 10px auto 10px auto;
-    width: 95%;
-  }
-
-  hr {
-    position: static;
-    width: 90%;
-    margin: 0 auto 0px auto;
     transform: none;
+    margin-bottom: 1rem;
   }
 
-  /* 모든 박스 → 세로 스택 */
+  .right-wrapper {
+    width: 92%;
+    min-width: 0;
+  }
+
   .loginBox,
-  .announcement,
-  .menuBox {
-    position: static;
-    width: 90%;
-    margin: 15px auto;
-    height: auto;
-  }
- 
-
-  .loginBox {
-    padding: 25px 20px;
-  }
-
-  .menuBox {
-    padding: 20px;
-  }
-
+  .menuBox,
   .announcement {
-    padding: 15px 20px;
-  }
-
-  /* input / button 가로로 좁아지는 문제 방지 */
-  input,
-  button {
     width: 100%;
   }
 
-  .button-area button {
-    height: 50px;
-  }
-
-  /* 아이디찾기 / 회원가입 링크 위치도 선형 정렬 */
-  .search-area,
-  .register-area {
-    position: static;
-    display: inline-block;
-    margin: 10px 5px 0 5px;
-  }
-
   .form-area {
-    flex-direction: column; /* 아이디/비번/버튼 세로 정렬 */
+    flex-direction: column;
   }
+
   .button-area button {
-    width: 100% !important;
-    box-sizing: border-box;
-  }
-
-  /* 아이디/비번찾기 / 회원가입 좌우 분리 */
-  .search-register-wrap {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-    font-size: 13px;
-  }
-
-  .search-area,
-  .register-area {
-    position: static !important;
-    margin: 0 !important;
-  }
-
-  /* 공지사항 hr 삐져나오는 문제 해결 */
-  .announcement hr {
-    position: static !important;
-    width: 100% !important;
-    margin: 8px 0 12px 0;
-  }
-    .portal-area {
-    position: relative !important;
-    text-align: right;
-    top: -60px;
-    left: 0px;
-    margin-bottom: -40px;
-  }
-
-  .portal-area img {
-    width: 45% !important;
-
+    width: 100%;
   }
 }

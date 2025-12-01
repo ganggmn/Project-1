@@ -24,7 +24,7 @@ function startTimer() {
 
         if (time < 0) {
             clearInterval(timerInterval);
-            timer.innerText = "시간 초과";
+            timer.innerText = "만료";
         }
     }, 1000);
 }
