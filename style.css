@@ -352,6 +352,7 @@ h2 {
   }
   .menuBox {
     order: 3;
+    height: 24px;
   }
 
   .form-area {
