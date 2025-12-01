@@ -341,6 +341,7 @@ h2 {
   .loginBox,
   .menuBox,
   .announcement {
+    display: flex;
     width: 100%;
     margin: 0;
   }
@@ -352,7 +353,7 @@ h2 {
   }
   .menuBox {
     order: 3;
-    height: max-content;
+    flex: 1;
   }
 
   .form-area {
