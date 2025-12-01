@@ -329,7 +329,9 @@ h2 {
     margin: 0;
   }
 
-  .right-wrapper {
+  .right-wrapper,
+  .right-column-wrapper,
+  .right-row-wrapper {
     display: flex;
     flex-direction: column;
     width: 92%;
@@ -340,6 +342,15 @@ h2 {
   .menuBox,
   .announcement {
     width: 100%;
+  }
+  .loginBox {
+    order: 1;
+  }
+  .announcement {
+    order: 2;
+  }
+  .menuBox {
+    order: 3;
   }
 
   .form-area {
