@@ -43,6 +43,19 @@ body {
     box-sizing: border-box;
     transition: 0.2s;
 }
+.container input.verify-code {
+    border: none;
+    margin-bottom: 0;
+    padding: 0;
+    background: transparent;
+    height: 45px;
+
+}
+.container input.verify-code:focus {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
 
 .container input:focus,
 .container select:focus {
@@ -175,10 +188,29 @@ body {
     gap: 10px;
 }
 
-.verify-area .verify-code {
-    flex: 3;
+.verify-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 250px;
+    height: 18px;
+
+    border: 1.5px solid #d1d5db;
+    border-radius: 12px;
+    padding: 12px 14px;
+    background: white;
+
+    flex:3;
+
+    transition: 0.2s;
 }
 
+.verify-wrapper.focus {
+    border-color: #003a9f;
+    box-shadow: 0 0 6px rgba(0,55,153,0.2);
+}
 .verify-area .verify-btn {
     flex: 2;
     height: 45px;
@@ -201,9 +233,9 @@ button {
     margin-bottom: 14px;
 }
 .timer {
-    flex: 0.65;
-    padding: 5px;
-    margin-bottom: 14px;
+    width: 20%;
+    padding:0;
+    margin-bottom: 0;
     color: rgba(209, 0, 0, 0.6);
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.05);
  

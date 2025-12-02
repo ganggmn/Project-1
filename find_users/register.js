@@ -50,7 +50,7 @@ let timerInterval = null;
 function startTimer() {
     if (timerInterval) clearInterval(timerInterval);  // 중복 방지
 
-    let time = 10; // 3분
+    let time = 180; // 3분
 
     const timer = document.getElementById("timer");
 

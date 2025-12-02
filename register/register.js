@@ -79,3 +79,14 @@ function startTimer() {
 document.getElementById("requestBtn").addEventListener("click", () => {
     startTimer();
 });
+
+const verifyInput = document.querySelector('.verify-code');
+const verifyWrapper = document.querySelector('.verify-wrapper');
+
+verifyInput.addEventListener('focus', () => {
+    verifyWrapper.classList.add('focus');
+});
+
+verifyInput.addEventListener('blur', () => {
+    verifyWrapper.classList.remove('focus');
+});
