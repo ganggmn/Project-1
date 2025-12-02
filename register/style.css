@@ -82,7 +82,7 @@ body {
    4. 회원정보 입력 영역
 --------------------------------------------------- */
 .username {
-    
+
 }
 
 .birth-area {
@@ -260,7 +260,7 @@ button {
     }
 
     .submit-btn {
-        width: 92%;
+        width: 100%;
     }
 
     .phone-area {
