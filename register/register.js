@@ -90,3 +90,41 @@ verifyInput.addEventListener('focus', () => {
 verifyInput.addEventListener('blur', () => {
     verifyWrapper.classList.remove('focus');
 });
+
+
+
+
+
+
+
+
+
+document.querySelector(".submit-btn").addEventListener("click", async () => {
+    const data = {
+        student_id: document.querySelector(".student-id").value,
+        password: document.querySelector(".password").value,
+        username: document.querySelector(".username").value,
+        birth: document.querySelector(".birth").value,
+        birth_first: document.querySelector(".birth-first").value,
+        phone: 
+            document.querySelectorAll(".phone")[0].value + "-" +
+            document.querySelectorAll(".phone")[1].value + "-" +
+            document.querySelectorAll(".phone")[2].value,
+        carrier: document.querySelector(".carrier").value
+    };
+
+    const res = await fetch("/register", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+    });
+
+    const result = await res.json();
+
+    if(result.success) {
+        alert("회원가입 완료!");
+        location.href = "login.html";
+    } else {
+        alert("회원가입 실패");
+    }
+});
