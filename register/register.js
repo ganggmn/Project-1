@@ -1,6 +1,52 @@
 document.getElementById("requestBtn").addEventListener("click", () => {
     const verifyBox = document.querySelector(".verify-area");
     verifyBox.classList.remove("hidden");   // 인증창 표시
+
+ 
+
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+       // 이름 입력창 선택
+    const usernameInput = document.querySelector('.username');
+
+    // 입력 중 숫자/특수문자 자동 제거
+    usernameInput.addEventListener('input', function () {
+        this.value = this.value.replace(/[^가-힣ㄱ-ㅎㅏ-ㅣ]/g, "");
+    });
+
+    // 전화번호 선택
+    const phoneInputs = document.querySelectorAll('.phone');
+
+    // 입력 중 글자/특수문자 자동 제거
+    phoneInputs.forEach(input => {
+        input.addEventListener('input', function () {
+            this.value = this.value.replace(/[^0-9]/g, "");
+        });
+    });
+
+    // 학번 선택
+    const studentInput = document.querySelector('.student-id');
+
+    // 입력 중 글자/특수문자 자동 제거
+    studentInput.addEventListener('input', function () {
+        this.value = this.value.replace(/[^0-9]/g, "");
+    });
+    // 생년월일 선택
+    const birthInput = document.querySelector('.birth');
+
+    // 입력 중 글자/특수문자 자동 제거
+    birthInput.addEventListener('input', function () {
+        this.value = this.value.replace(/[^0-9]/g, "");
+    });
+    // 생년월일 선택
+    const birthfirstInput = document.querySelector('.birth-first');
+
+    // 입력 중 글자/특수문자 자동 제거
+    birthfirstInput.addEventListener('input', function () {
+        this.value = this.value.replace(/[^0-9]/g, "");
+    });
+
 });
 
 let timerInterval = null;

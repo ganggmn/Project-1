@@ -78,11 +78,13 @@ body {
     background: #e1e4eb;
     margin-top: 6px;
 }
-
-
 /* ---------------------------------------------------
-   4. 생년월일 입력 영역
+   4. 회원정보 입력 영역
 --------------------------------------------------- */
+.username {
+    
+}
+
 .birth-area {
     display: flex;
     gap: 10px;
@@ -137,14 +139,17 @@ body {
 .phone-area .request {
     height: 45px;
     box-sizing: border-box;
+    
 }
 .carrier-wrapper {
     display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 .carrier {
     flex: 1.2;
-    margin-right: 20px;
+    
 }
 .request {
     flex: 3;
@@ -178,7 +183,7 @@ body {
 }
 
 .verify-area .verify-btn {
-    flex: 1;
+    flex: 2;
     height: 45px;
 
     background-color: #003a9f;
@@ -192,11 +197,16 @@ body {
 }
 .timer-wrapper {
     display: flex;
+    flex: 3;
+    align-items: center;
+}
+button {
+    margin-bottom: 14px;
 }
 .timer {
-    position: absolute;
-    margin-top: 14px;
-    margin-left: 130px;
+    flex: 0.65;
+    padding: 5px;
+    margin-bottom: 14px;
     color: rgba(209, 0, 0, 0.6);
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.05);
  
@@ -230,6 +240,8 @@ body {
 .submit-btn:hover {
     background-color: #002b78;
 }
+
+
 
 
 /* ---------------------------------------------------
