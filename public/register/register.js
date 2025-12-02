@@ -46,6 +46,13 @@ document.addEventListener('DOMContentLoaded', () => {
     birthfirstInput.addEventListener('input', function () {
         this.value = this.value.replace(/[^0-9]/g, "");
     });
+    // 생년월일 선택
+    const verifycodeInput = document.querySelector('.verify-code');
+
+    // 입력 중 글자/특수문자 자동 제거
+    verifycodeInput.addEventListener('input', function () {
+        this.value = this.value.replace(/[^0-9]/g, "");
+    });
 
 });
 
@@ -123,7 +130,7 @@ document.querySelector(".submit-btn").addEventListener("click", async () => {
 
     if(result.success) {
         alert("회원가입 완료!");
-        location.href = "login.html";
+        location.href = "index.html";
     } else {
         alert("회원가입 실패");
     }

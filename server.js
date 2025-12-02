@@ -2,11 +2,19 @@ import express from "express";
 import { db } from "./db.js";
 import bcrypt from "bcrypt";
 import bodyParser from "body-parser";
+import { fileURLToPath } from 'url';
+import path from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 app.use(bodyParser.json());
 app.use(express.static("public"));
 
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "index.html"));
+});
 
 
 app.post("/register", async (req, res) => {

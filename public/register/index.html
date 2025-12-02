@@ -28,7 +28,7 @@
             <input type="text" class="username" placeholder="이름">
 
             <div class="birth-area">
-                <input type="text" class="birth" placeholder="생년월일 (6자리)">
+                <input type="text" class="birth" placeholder="생년월일 (6자리)" maxlength="6">
                 <span class="dash">-</span>
                 <input type="text" class="birth-first" maxlength="1">
                 <span class="circle">●●●●●●</span>
@@ -62,12 +62,12 @@
 
             <div class="verify-area hidden">
                 <div class="verify-wrapper">
-                    <input type="text" class="verify-code" placeholder="인증번호 입력">
-                    <div id="timer" class="timer"></div>
-                
-
-                    <button class="verify-btn">확인</button>
+                    <input type="text" class="verify-code" placeholder="인증번호 입력" maxlength="6">
+                    <span id="timer" class="timer"></span>
+            
                 </div>
+                
+                <button class="verify-btn">확인</button>
             </div>
 
         </div>

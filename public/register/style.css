@@ -224,11 +224,7 @@ body {
     font-weight: 600;
     cursor: pointer;
 }
-.timer-wrapper {
-    display: flex;
-    flex: 3;
-    align-items: center;
-}
+
 button {
     margin-bottom: 14px;
 }
